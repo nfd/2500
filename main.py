@@ -49,7 +49,7 @@ class Game(object):
 			# FIXME: Should only updateVisibles when player moves?
 			# Possibly other things too, such as lighting lamps...
 			self.level.updateVisibles(self.player.x, self.player.y,
-					self.view.portal_left(), self.view.portal_top(),
+					self.view.portal_left, self.view.portal_top,
 					self.view.portal_width, self.view.portal_height)
 
 			# Redraw

@@ -20,9 +20,11 @@ class TTYView(object):
 				'n': 'player_right_down',
 		}
 
+	@property
 	def portal_left(self):
 		return self.player.x - (PORTAL_WIDTH / 2)
 
+	@property
 	def portal_top(self):
 		return self.player.y - (PORTAL_HEIGHT / 2)
 
@@ -37,8 +39,8 @@ class TTYView(object):
 		self.player = objects[0]
 	
 	def draw(self):
-		min_x = self.portal_left()
-		min_y = self.portal_top()
+		min_x = self.portal_left
+		min_y = self.portal_top
 
 		text_lines = []
 
